@@ -1,11 +1,10 @@
 import {
-  createBottomTabNavigator,
-  createAppContainer
+  createBottomTabNavigator
 } from 'react-navigation';
 import HomeStack from './home';
 import UserStack from './user';
 
-const TabNav = createAppContainer(createBottomTabNavigator({
+const TabNav = createBottomTabNavigator({
   Home: {
     screen: HomeStack,
     navigationOptions: () => ({
@@ -23,6 +22,6 @@ const TabNav = createAppContainer(createBottomTabNavigator({
     activeTintColor: 'tomato',
     inactiveTintColor: 'gray',
   }
-}));
+});
 
 export default TabNav

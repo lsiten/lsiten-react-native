@@ -1,11 +1,10 @@
   import {
-    createStackNavigator,
-    createAppContainer
+    createStackNavigator
   } from 'react-navigation';
   import User from '../pages/User/Index';
-  export default createAppContainer(createStackNavigator({
+  export default createStackNavigator({
     index: {
       screen: User
     }
-  }))
+  })
   
